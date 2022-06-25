@@ -1,12 +1,12 @@
 import { Flex, Heading } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import Banner from "../components/Banner";
-import Header from "../components/Header";
+import { Banner } from "../components/Banner";
+import { Header } from "../components/Header";
 import { Features } from "../components/Particulars";
-import Separator from "../components/Separator";
+import { Separator } from "../components/Separator";
 
-import Slider from "../components/Slider";
+import { Slider } from "../components/Slider";
 import { getPrismicClient } from "../services/prismic";
 
 interface HomeProps {

@@ -3,7 +3,7 @@ import { useRouter } from "next/dist/client/router";
 import Link from 'next/link';
 import { RiArrowLeftSLine } from 'react-icons/ri';
 
-export default function Header() {
+export function Header() {
   const { asPath } = useRouter()
   const notHomePage = asPath !== '/'
 

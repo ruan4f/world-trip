@@ -1,7 +1,7 @@
 import { Flex, Heading } from "@chakra-ui/react";
 import { ContinentProps } from "../../pages/continent/[slug]";
 
-export default function ContinentBanner({continent}:ContinentProps) {
+export function ContinentBanner({continent}:ContinentProps) {
 
   return (
     <Flex

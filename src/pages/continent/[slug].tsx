@@ -3,11 +3,11 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/dist/client/router";
 import Head from "next/head";
 import { RichText } from 'prismic-dom';
-import Cities from "../../components/Cities";
-import Content from "../../components/Content";
-import ContinentBanner from "../../components/ContinentBanner";
-import Header from "../../components/Header";
-import Loading from "../../components/Loading";
+import { Cities } from "../../components/Cities";
+import { Content } from "../../components/Content";
+import { ContinentBanner } from "../../components/ContinentBanner";
+import { Header } from "../../components/Header";
+import { Loading } from "../../components/Loading";
 import { getPrismicClient } from "../../services/prismic";
 
 export interface ContinentProps {
@@ -29,7 +29,7 @@ export interface ContinentProps {
   }
 }
 
-export default function Continent({continent}: ContinentProps) {
+export default function Continent({ continent }: ContinentProps) {
   const router = useRouter();
   if (router.isFallback) {
     return <Loading />
@@ -85,7 +85,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const response = await prismic.getByUID('continents', String(slug), {});
 
   const continent = {
-    slug:response.uid,
+    slug: response.uid,
     title: response.data.title,
     description: RichText.asText(response.data.description),
     banner_image: response.data.banner_image.url,
@@ -98,7 +98,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
         city: city.city,
         country: city.country,
         thumbnail: city.thumbnail.url,
-        flag:city.flag.url,
+        flag: city.flag.url,
       }
     })
   };

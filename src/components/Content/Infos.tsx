@@ -1,8 +1,8 @@
-import { Flex, Heading, Icon, Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverHeader, PopoverTrigger, Text, Tooltip } from "@chakra-ui/react";
+import { Flex, Heading, Icon, Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverTrigger, Text } from "@chakra-ui/react";
 import { RiInformationLine } from "react-icons/ri";
 import { ContinentProps } from "../../pages/continent/[slug]";
 
-export default function Infos({continent}: ContinentProps) {
+export function Infos({continent}: ContinentProps) {
   return (
     <Flex alignItems="center" justifyContent="space-between">
     <Flex direction="column" justify="center" align={["flex-start","flex-start", "center"]}>

@@ -15,7 +15,7 @@ interface SliderProps {
   }[]
 }
 
-export default function Slider({ continents }: SliderProps) {
+export function Slider({ continents }: SliderProps) {
   return (
     <Flex w="100%" h={["250px", "450px"]} maxW="1240px" mx="auto" mb={["5", "10"]}>
       <Swiper
