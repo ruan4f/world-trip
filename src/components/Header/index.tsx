@@ -8,7 +8,7 @@ export function Header() {
   const notHomePage = asPath !== '/'
 
   return (
-    <Flex bg="white" w="100%" as="header" mx="auto" px="1rem" h={["50px","100px"]} align="center" justify="center">
+    <Flex bg="white" w="100%" as="header" mx="auto" px="1rem" h={["50px", "100px"]} align="center" justify="center">
       <Grid
         h="100%"
         mx="auto"
@@ -22,17 +22,17 @@ export function Header() {
         {notHomePage && (
           <Link href="/">
             <a>
-              <Icon as={RiArrowLeftSLine} fontSize={[20,40]} justifySelf="start"/>
+              <Icon as={RiArrowLeftSLine} fontSize={[20, 40]} justifySelf="start" />
             </a>
           </Link>
         )}
-          <Image
-            w={["81px","184px"]}
-            src="/logo.svg"
-            alt="Um avião voando sobre o nome da marca world trip"
-            justifySelf="center"
-            gridColumn="2"
-          />
+        <Image
+          w={["81px", "184px"]}
+          src="/logo.svg"
+          alt="Um avião voando sobre o nome da marca world trip"
+          justifySelf="center"
+          gridColumn="2"
+        />
       </Grid>
     </Flex>
   )
