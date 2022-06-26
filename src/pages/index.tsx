@@ -55,7 +55,7 @@ export default function Home({ continents }: HomeProps) {
 export const getStaticProps: GetStaticProps = async () => {
   const prismic = getPrismicClient({});
 
-  const response = await prismic.getByType('continent');
+  const response = await prismic.getByType('continents');
 
   const continents = response.results.map(continent => {
     return {

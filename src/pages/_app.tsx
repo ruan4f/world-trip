@@ -4,10 +4,10 @@ import NextNProgress from 'nextjs-progressbar';
 import { theme } from '../styles/theme';
 
 // Import Swiper styles
-import 'swiper/components/navigation/navigation.scss';
-import 'swiper/components/pagination/pagination.scss';
-import 'swiper/components/scrollbar/scrollbar.scss';
-import 'swiper/swiper.scss';
+import 'swiper/scss';
+import 'swiper/scss/navigation';
+import 'swiper/scss/pagination';
+import 'swiper/scss/scrollbar';
 
 import '../styles/slider.scss';
 
