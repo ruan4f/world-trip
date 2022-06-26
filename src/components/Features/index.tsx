@@ -1,4 +1,4 @@
-import { Grid, GridItem } from "@chakra-ui/layout";
+import { Grid, GridItem } from '@chakra-ui/react';
 import { Feature } from "./Feature";
 
 export function Features() {
@@ -6,8 +6,6 @@ export function Features() {
     <Grid
       templateColumns={["1fr 1fr","1fr 1fr","1fr 1fr","repeat(5, 1fr)"]}
       w="100%"
-      justify="space-between"
-      align="center"
       mt={["10","32"]}
       mx="auto"
       maxW="1160px"

@@ -21,8 +21,7 @@ export function Banner() {
         </div>
         <Image
           w={["300px", "300px", "300px", "430px"]}
-          display={['none', 'none',
-            'block']}
+          display={['none', 'none', 'block']}
           src="/airplane.svg"
           alt="Avião amarelo voando com algumas nuvens ao redor."
           transform="translateY(48px)"
